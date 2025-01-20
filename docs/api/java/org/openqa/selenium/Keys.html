@@ -83,7 +83,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a>&gt;</code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">Keys</span>
+<div class="type-signature"><span class="annotations">@NullMarked
+</span><span class="modifiers">public enum </span><span class="element-name type-name-label">Keys</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a>&gt;
 implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/CharSequence.html" title="class or interface in java.lang" class="external-link">CharSequence</a></span></div>
 <div class="block">Representations of pressable keys that aren't text. These are stored in the Unicode PUA (Private
@@ -272,7 +273,7 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCodePoint()" class="member-name-link">getCodePoint</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static @Nullable <a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getKeyFromUnicode(char)" class="member-name-link">getKeyFromUnicode</a><wbr>(char&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Get the special key representation, <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a>, of the supplied character if there is one.</div>
@@ -832,7 +833,7 @@ not permitted.)</div>
 <li>
 <section class="detail" id="getKeyFromUnicode(char)">
 <h3>getKeyFromUnicode</h3>
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">getKeyFromUnicode</span><wbr><span class="parameters">(char&nbsp;key)</span></div>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">@Nullable <a href="Keys.html" title="enum class in org.openqa.selenium">Keys</a></span>&nbsp;<span class="element-name">getKeyFromUnicode</span><wbr><span class="parameters">(char&nbsp;key)</span></div>
 <div class="block">Get the special key representation, <a href="Keys.html" title="enum class in org.openqa.selenium"><code>Keys</code></a>, of the supplied character if there is one. If
  there is no special key tied to this character, null will be returned.</div>
 <dl class="notes">

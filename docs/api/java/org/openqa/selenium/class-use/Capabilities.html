@@ -160,7 +160,7 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">
 <div class="block">Creates a new instance of the <a href="../WebDriver.html" title="interface in org.openqa.selenium"><code>WebDriver</code></a> implementation.</div>
 </div>
-<div class="col-first even-row-color"><code>static <a href="../Proxy.html" title="class in org.openqa.selenium">Proxy</a></code></div>
+<div class="col-first even-row-color"><code>static @Nullable <a href="../Proxy.html" title="class in org.openqa.selenium">Proxy</a></code></div>
 <div class="col-second even-row-color"><span class="type-name-label">Proxy.</span><code><a href="../Proxy.html#extractFrom(org.openqa.selenium.Capabilities)" class="member-name-link">extractFrom</a><wbr>(<a href="../Capabilities.html" title="interface in org.openqa.selenium">Capabilities</a>&nbsp;capabilities)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>boolean</code></div>
@@ -706,10 +706,11 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../grid/graphql/Node.html#%3Cinit%3E(org.openqa.selenium.grid.data.NodeId,java.net.URI,org.openqa.selenium.grid.data.Availability,int,int,java.util.Map,java.util.Map,java.lang.String,org.openqa.selenium.grid.graphql.OsInfo)" class="member-name-link">Node</a><wbr>(<a href="../grid/data/NodeId.html" title="class in org.openqa.selenium.grid.data">NodeId</a>&nbsp;id,
+<div class="col-second even-row-color"><code><a href="../grid/graphql/Node.html#%3Cinit%3E(org.openqa.selenium.grid.data.NodeId,java.net.URI,org.openqa.selenium.grid.data.Availability,int,java.time.Duration,int,java.util.Map,java.util.Map,java.lang.String,org.openqa.selenium.grid.graphql.OsInfo)" class="member-name-link">Node</a><wbr>(<a href="../grid/data/NodeId.html" title="class in org.openqa.selenium.grid.data">NodeId</a>&nbsp;id,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&nbsp;uri,
  <a href="../grid/data/Availability.html" title="enum class in org.openqa.selenium.grid.data">Availability</a>&nbsp;status,
  int&nbsp;maxSession,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a>&nbsp;sessionTimeout,
  int&nbsp;slotCount,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../Capabilities.html" title="interface in org.openqa.selenium">Capabilities</a>,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;&nbsp;stereotypes,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="../grid/data/Session.html" title="class in org.openqa.selenium.grid.data">Session</a>,<wbr><a href="../grid/data/Slot.html" title="class in org.openqa.selenium.grid.data">Slot</a>&gt;&nbsp;activeSessions,
@@ -1160,11 +1161,20 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>class&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../remote/AbstractDriverOptions.html" class="type-name-link" title="class in org.openqa.selenium.remote">AbstractDriverOptions</a>&lt;DO extends <a href="../remote/AbstractDriverOptions.html" title="class in org.openqa.selenium.remote">AbstractDriverOptions</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="../remote/AbstractDriverOptions.html" class="type-name-link" title="class in org.openqa.selenium.remote">AbstractDriverOptions</a>&lt;DO extends <a href="../remote/AbstractDriverOptions.html" title="class in org.openqa.selenium.remote">AbstractDriverOptions</a>&lt;DO&gt;&gt;</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>class&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="../remote/DesiredCapabilities.html" class="type-name-link" title="class in org.openqa.selenium.remote">DesiredCapabilities</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+</div>
+<div class="caption"><span>Fields in <a href="../remote/package-summary.html">org.openqa.selenium.remote</a> declared as <a href="../Capabilities.html" title="interface in org.openqa.selenium">Capabilities</a></span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Field</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>protected <a href="../Capabilities.html" title="interface in org.openqa.selenium">Capabilities</a></code></div>
+<div class="col-second even-row-color"><span class="type-name-label">RemoteWebDriver.</span><code><a href="../remote/RemoteWebDriver.html#capabilities" class="member-name-link">capabilities</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 <div class="caption"><span>Fields in <a href="../remote/package-summary.html">org.openqa.selenium.remote</a> with type parameters of type <a href="../Capabilities.html" title="interface in org.openqa.selenium">Capabilities</a></span></div>
 <div class="summary-table three-column-summary">

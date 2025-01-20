@@ -97,12 +97,22 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>long</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addAuthenticationHandler(org.openqa.selenium.UsernameAndPassword)" class="member-name-link">addAuthenticationHandler</a><wbr>(<a href="../UsernameAndPassword.html" title="class in org.openqa.selenium">UsernameAndPassword</a>&nbsp;usernameAndPassword)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>long</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#addRequestHandler(java.util.function.Predicate,java.util.function.UnaryOperator)" class="member-name-link">addRequestHandler</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&gt;&nbsp;filter,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html" title="class or interface in java.util.function" class="external-link">UnaryOperator</a>&lt;<a href="http/HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&gt;&nbsp;handler)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clearAuthenticationHandlers()" class="member-name-link">clearAuthenticationHandlers</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clearAuthenticationHandlers()" class="member-name-link">clearAuthenticationHandlers</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#clearRequestHandlers()" class="member-name-link">clearRequestHandlers</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeAuthenticationHandler(long)" class="member-name-link">removeAuthenticationHandler</a><wbr>(long&nbsp;id)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#removeRequestHandler(long)" class="member-name-link">removeRequestHandler</a><wbr>(long&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -140,6 +150,25 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="clearAuthenticationHandlers()">
 <h3>clearAuthenticationHandlers</h3>
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clearAuthenticationHandlers</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="addRequestHandler(java.util.function.Predicate,java.util.function.UnaryOperator)">
+<h3>addRequestHandler</h3>
+<div class="member-signature"><span class="return-type">long</span>&nbsp;<span class="element-name">addRequestHandler</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html" title="class or interface in java.util.function" class="external-link">Predicate</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html" title="class or interface in java.net" class="external-link">URI</a>&gt;&nbsp;filter,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html" title="class or interface in java.util.function" class="external-link">UnaryOperator</a>&lt;<a href="http/HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&gt;&nbsp;handler)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="removeRequestHandler(long)">
+<h3>removeRequestHandler</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">removeRequestHandler</span><wbr><span class="parameters">(long&nbsp;id)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="clearRequestHandlers()">
+<h3>clearRequestHandlers</h3>
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">clearRequestHandlers</span>()</div>
 </section>
 </li>
 </ul>

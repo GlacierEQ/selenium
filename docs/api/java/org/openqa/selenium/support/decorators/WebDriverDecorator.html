@@ -233,9 +233,18 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Class</div>
 <div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>protected static class&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="WebDriverDecorator.Definition.html" class="type-name-link" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.Definition</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static interface&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="WebDriverDecorator.HasTarget.html" class="type-name-link" title="interface in org.openqa.selenium.support.decorators">WebDriverDecorator.HasTarget</a>&lt;<a href="WebDriverDecorator.HasTarget.html" title="type parameter in WebDriverDecorator.HasTarget">Z</a>&gt;</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected static interface&nbsp;</code></div>
 <div class="col-second even-row-color"><code><a href="WebDriverDecorator.JsonSerializer.html" class="type-name-link" title="interface in org.openqa.selenium.support.decorators">WebDriverDecorator.JsonSerializer</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected static class&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="WebDriverDecorator.ProxyFactory.html" class="type-name-link" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.ProxyFactory</a>&lt;<a href="WebDriverDecorator.ProxyFactory.html" title="type parameter in WebDriverDecorator.ProxyFactory">T</a>&gt;</code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -310,20 +319,25 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected final &lt;Z&gt;&nbsp;Z</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProxy(org.openqa.selenium.support.decorators.Decorated,java.lang.Class)" class="member-name-link">createProxy</a><wbr>(<a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;Z&gt;&nbsp;decorated,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;Z&gt;&nbsp;clazz)</code></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends Z&gt;&nbsp;clazz)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#decorate(T)" class="member-name-link">decorate</a><wbr>(<a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a>&nbsp;original)</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected final &lt;Z&gt;&nbsp;<a href="WebDriverDecorator.ProxyFactory.html" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.ProxyFactory</a>&lt;? extends Z&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createProxyFactory(org.openqa.selenium.support.decorators.WebDriverDecorator.Definition,org.openqa.selenium.support.decorators.Decorated,java.lang.Class)" class="member-name-link">createProxyFactory</a><wbr>(<a href="WebDriverDecorator.Definition.html" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.Definition</a>&nbsp;definition,
+ <a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;Z&gt;&nbsp;sample,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends Z&gt;&nbsp;clazz)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;<a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDecoratedDriver()" class="member-name-link">getDecoratedDriver</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#decorate(T)" class="member-name-link">decorate</a><wbr>(<a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a>&nbsp;original)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onError(org.openqa.selenium.support.decorators.Decorated,java.lang.reflect.Method,java.lang.Object%5B%5D,java.lang.reflect.InvocationTargetException)" class="member-name-link">onError</a><wbr>(<a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;?&gt;&nbsp;target,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;<a href="WebDriverDecorator.html" title="type parameter in WebDriverDecorator">T</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getDecoratedDriver()" class="member-name-link">getDecoratedDriver</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onError(org.openqa.selenium.support.decorators.Decorated,java.lang.reflect.Method,java.lang.Object%5B%5D,java.lang.reflect.InvocationTargetException)" class="member-name-link">onError</a><wbr>(<a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;?&gt;&nbsp;target,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>[]&nbsp;args,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/InvocationTargetException.html" title="class or interface in java.lang.reflect" class="external-link">InvocationTargetException</a>&nbsp;e)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -475,7 +489,16 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="createProxy(org.openqa.selenium.support.decorators.Decorated,java.lang.Class)">
 <h3>createProxy</h3>
 <div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="type-parameters">&lt;Z&gt;</span>&nbsp;<span class="return-type">Z</span>&nbsp;<span class="element-name">createProxy</span><wbr><span class="parameters">(<a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;Z&gt;&nbsp;decorated,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;Z&gt;&nbsp;clazz)</span></div>
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends Z&gt;&nbsp;clazz)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="createProxyFactory(org.openqa.selenium.support.decorators.WebDriverDecorator.Definition,org.openqa.selenium.support.decorators.Decorated,java.lang.Class)">
+<h3>createProxyFactory</h3>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="type-parameters">&lt;Z&gt;</span>
+<span class="return-type"><a href="WebDriverDecorator.ProxyFactory.html" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.ProxyFactory</a>&lt;? extends Z&gt;</span>&nbsp;<span class="element-name">createProxyFactory</span><wbr><span class="parameters">(<a href="WebDriverDecorator.Definition.html" title="class in org.openqa.selenium.support.decorators">WebDriverDecorator.Definition</a>&nbsp;definition,
+ <a href="Decorated.html" title="interface in org.openqa.selenium.support.decorators">Decorated</a>&lt;Z&gt;&nbsp;sample,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends Z&gt;&nbsp;clazz)</span></div>
 </section>
 </li>
 </ul>

@@ -178,6 +178,11 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="../CommandInfo.html" title="class in org.openqa.selenium.remote">CommandInfo</a>&gt;</code></div>
 <div class="col-second even-row-color"><span class="type-name-label">AdditionalHttpCommands.</span><code><a href="../AdditionalHttpCommands.html#getAdditionalCommands()" class="member-name-link">getAdditionalCommands</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html" title="class or interface in java.util" class="external-link">Map</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>,<wbr><a href="../CommandInfo.html" title="class in org.openqa.selenium.remote">CommandInfo</a>&gt;</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">HttpCommandExecutor.</span><code><a href="../HttpCommandExecutor.html#getAdditionalCommands()" class="member-name-link">getAdditionalCommands</a>()</code></div>
+<div class="col-last odd-row-color">
+<div class="block">Returns an immutable view of the additional commands.</div>
+</div>
 </div>
 <div class="caption"><span>Methods in <a href="../package-summary.html">org.openqa.selenium.remote</a> with parameters of type <a href="../CommandInfo.html" title="class in org.openqa.selenium.remote">CommandInfo</a></span></div>
 <div class="summary-table three-column-summary">
@@ -185,9 +190,15 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected void</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">HttpCommandExecutor.</span><code><a href="../HttpCommandExecutor.html#defineCommand(java.lang.String,org.openqa.selenium.remote.CommandInfo)" class="member-name-link">defineCommand</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;commandName,
+<div class="col-second even-row-color"><span class="type-name-label">HttpCommandExecutor.</span><code><a href="../HttpCommandExecutor.html#addAdditionalCommand(java.lang.String,org.openqa.selenium.remote.CommandInfo)" class="member-name-link">addAdditionalCommand</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;commandName,
  <a href="../CommandInfo.html" title="class in org.openqa.selenium.remote">CommandInfo</a>&nbsp;info)</code></div>
 <div class="col-last even-row-color">
+<div class="block">Adds or updates additional commands.</div>
+</div>
+<div class="col-first odd-row-color"><code>protected void</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">HttpCommandExecutor.</span><code><a href="../HttpCommandExecutor.html#defineCommand(java.lang.String,org.openqa.selenium.remote.CommandInfo)" class="member-name-link">defineCommand</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;commandName,
+ <a href="../CommandInfo.html" title="class in org.openqa.selenium.remote">CommandInfo</a>&nbsp;info)</code></div>
+<div class="col-last odd-row-color">
 <div class="block">It may be useful to extend the commands understood by this <code>HttpCommandExecutor</code> at run
  time, and this can be achieved via this method.</div>
 </div>

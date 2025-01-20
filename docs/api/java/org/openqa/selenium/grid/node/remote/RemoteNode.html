@@ -172,7 +172,13 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#newSession(org.openqa.selenium.grid.data.CreateSessionRequest)" class="member-name-link">newSession</a><wbr>(<a href="../../data/CreateSessionRequest.html" title="class in org.openqa.selenium.grid.data">CreateSessionRequest</a>&nbsp;sessionRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stop(org.openqa.selenium.remote.SessionId)" class="member-name-link">stop</a><wbr>(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#releaseConnection(org.openqa.selenium.remote.SessionId)" class="member-name-link">releaseConnection</a><wbr>(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#stop(org.openqa.selenium.remote.SessionId)" class="member-name-link">stop</a><wbr>(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#tryAcquireConnection(org.openqa.selenium.remote.SessionId)" class="member-name-link">tryAcquireConnection</a><wbr>(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../../../remote/http/HttpResponse.html" title="class in org.openqa.selenium.remote.http">HttpResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#uploadFile(org.openqa.selenium.remote.http.HttpRequest,org.openqa.selenium.remote.SessionId)" class="member-name-link">uploadFile</a><wbr>(<a href="../../../remote/http/HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;req,
@@ -272,6 +278,26 @@ implements <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../Node.html#isSessionOwner(org.openqa.selenium.remote.SessionId)">isSessionOwner</a></code>&nbsp;in class&nbsp;<code><a href="../Node.html" title="class in org.openqa.selenium.grid.node">Node</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="tryAcquireConnection(org.openqa.selenium.remote.SessionId)">
+<h3>tryAcquireConnection</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">tryAcquireConnection</span><wbr><span class="parameters">(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../Node.html#tryAcquireConnection(org.openqa.selenium.remote.SessionId)">tryAcquireConnection</a></code>&nbsp;in class&nbsp;<code><a href="../Node.html" title="class in org.openqa.selenium.grid.node">Node</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="releaseConnection(org.openqa.selenium.remote.SessionId)">
+<h3>releaseConnection</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">releaseConnection</span><wbr><span class="parameters">(<a href="../../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../Node.html#releaseConnection(org.openqa.selenium.remote.SessionId)">releaseConnection</a></code>&nbsp;in class&nbsp;<code><a href="../Node.html" title="class in org.openqa.selenium.grid.node">Node</a></code></dd>
 </dl>
 </section>
 </li>

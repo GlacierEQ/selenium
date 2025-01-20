@@ -127,6 +127,18 @@ implements <a href="../../status/HasReadyState.html" title="interface in org.ope
  by <code>sessionId</code>. This returns a boolean.</td>
  </tr>
  <tr>
+ <td>DELETE</td>
+ <td>/se/grid/node/connection/{sessionId}</td>
+ <td>Notifies the node about closure of a websocket connection for the <a href="../data/Session.html" title="class in org.openqa.selenium.grid.data"><code>Session</code></a>
+ identified by <code>sessionId</code>.</td>
+ </tr>
+ <tr>
+ <td>POST</td>
+ <td>/se/grid/node/connection/{sessionId}</td>
+ <td>Allows the node to be ask about whether or not new websocket connections are allowed for the <a href="../data/Session.html" title="class in org.openqa.selenium.grid.data"><code>Session</code></a>
+ identified by <code>sessionId</code>. This returns a boolean.</td>
+ </tr>
+ <tr>
  <td>*</td>
  <td>/session/{sessionId}/*</td>
  <td>The request is forwarded to the <a href="../data/Session.html" title="class in org.openqa.selenium.grid.data"><code>Session</code></a> identified by <code>sessionId</code>. When the
@@ -244,7 +256,13 @@ implements <a href="../../status/HasReadyState.html" title="interface in org.ope
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#newSession(org.openqa.selenium.grid.data.CreateSessionRequest)" class="member-name-link">newSession</a><wbr>(<a href="../data/CreateSessionRequest.html" title="class in org.openqa.selenium.grid.data">CreateSessionRequest</a>&nbsp;sessionRequest)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stop(org.openqa.selenium.remote.SessionId)" class="member-name-link">stop</a><wbr>(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#releaseConnection(org.openqa.selenium.remote.SessionId)" class="member-name-link">releaseConnection</a><wbr>(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#stop(org.openqa.selenium.remote.SessionId)" class="member-name-link">stop</a><wbr>(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#tryAcquireConnection(org.openqa.selenium.remote.SessionId)" class="member-name-link">tryAcquireConnection</a><wbr>(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="../../remote/http/HttpResponse.html" title="class in org.openqa.selenium.remote.http">HttpResponse</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#uploadFile(org.openqa.selenium.remote.http.HttpRequest,org.openqa.selenium.remote.SessionId)" class="member-name-link">uploadFile</a><wbr>(<a href="../../remote/http/HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;req,
@@ -409,6 +427,18 @@ implements <a href="../../status/HasReadyState.html" title="interface in org.ope
 <section class="detail" id="isSessionOwner(org.openqa.selenium.remote.SessionId)">
 <h3>isSessionOwner</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isSessionOwner</span><wbr><span class="parameters">(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="tryAcquireConnection(org.openqa.selenium.remote.SessionId)">
+<h3>tryAcquireConnection</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">tryAcquireConnection</span><wbr><span class="parameters">(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="releaseConnection(org.openqa.selenium.remote.SessionId)">
+<h3>releaseConnection</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">releaseConnection</span><wbr><span class="parameters">(<a href="../../remote/SessionId.html" title="class in org.openqa.selenium.remote">SessionId</a>&nbsp;id)</span></div>
 </section>
 </li>
 <li>

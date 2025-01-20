@@ -134,10 +134,13 @@ implements <a href="../HttpClient.html" title="interface in org.openqa.selenium.
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../HttpResponse.html" title="class in org.openqa.selenium.remote.http">HttpResponse</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#execute(org.openqa.selenium.remote.http.HttpRequest)" class="member-name-link">execute</a><wbr>(<a href="../HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;req)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../WebSocket.html" title="interface in org.openqa.selenium.remote.http">WebSocket</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#openSocket(org.openqa.selenium.remote.http.HttpRequest,org.openqa.selenium.remote.http.WebSocket.Listener)" class="member-name-link">openSocket</a><wbr>(<a href="../HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;request,
- <a href="../WebSocket.Listener.html" title="interface in org.openqa.selenium.remote.http">WebSocket.Listener</a>&nbsp;listener)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="../HttpResponse.html" title="class in org.openqa.selenium.remote.http">HttpResponse</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#executeAsync(org.openqa.selenium.remote.http.HttpRequest)" class="member-name-link">executeAsync</a><wbr>(<a href="../HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;request)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="../WebSocket.html" title="interface in org.openqa.selenium.remote.http">WebSocket</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#openSocket(org.openqa.selenium.remote.http.HttpRequest,org.openqa.selenium.remote.http.WebSocket.Listener)" class="member-name-link">openSocket</a><wbr>(<a href="../HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;request,
+ <a href="../WebSocket.Listener.html" title="interface in org.openqa.selenium.remote.http">WebSocket.Listener</a>&nbsp;listener)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -180,6 +183,16 @@ implements <a href="../HttpClient.html" title="interface in org.openqa.selenium.
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../HttpClient.html#openSocket(org.openqa.selenium.remote.http.HttpRequest,org.openqa.selenium.remote.http.WebSocket.Listener)">openSocket</a></code>&nbsp;in interface&nbsp;<code><a href="../HttpClient.html" title="interface in org.openqa.selenium.remote.http">HttpClient</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="executeAsync(org.openqa.selenium.remote.http.HttpRequest)">
+<h3>executeAsync</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="../HttpResponse.html" title="class in org.openqa.selenium.remote.http">HttpResponse</a>&gt;</span>&nbsp;<span class="element-name">executeAsync</span><wbr><span class="parameters">(<a href="../HttpRequest.html" title="class in org.openqa.selenium.remote.http">HttpRequest</a>&nbsp;request)</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../HttpClient.html#executeAsync(org.openqa.selenium.remote.http.HttpRequest)">executeAsync</a></code>&nbsp;in interface&nbsp;<code><a href="../HttpClient.html" title="interface in org.openqa.selenium.remote.http">HttpClient</a></code></dd>
 </dl>
 </section>
 </li>

@@ -130,9 +130,30 @@ implements <a href="Wait.html" title="interface in org.openqa.selenium.support.u
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected static final long</code></div>
-<div class="col-second even-row-color"><code><a href="#DEFAULT_SLEEP_TIMEOUT" class="member-name-link">DEFAULT_SLEEP_TIMEOUT</a></code></div>
+<div class="col-first even-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Clock.html" title="class or interface in java.time" class="external-link">Clock</a></code></div>
+<div class="col-second even-row-color"><code><a href="#clock" class="member-name-link">clock</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected static final long</code></div>
+<div class="col-second odd-row-color"><code><a href="#DEFAULT_SLEEP_TIMEOUT" class="member-name-link">DEFAULT_SLEEP_TIMEOUT</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&gt;&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#ignoredExceptions" class="member-name-link">ignoredExceptions</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected final <a href="FluentWait.html" title="type parameter in FluentWait">T</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#input" class="member-name-link">input</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
+<div class="col-second even-row-color"><code><a href="#interval" class="member-name-link">interval</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#messageSupplier" class="member-name-link">messageSupplier</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected final <a href="Sleeper.html" title="interface in org.openqa.selenium.support.ui">Sleeper</a></code></div>
+<div class="col-second even-row-color"><code><a href="#sleeper" class="member-name-link">sleeper</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#timeout" class="member-name-link">timeout</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -244,6 +265,48 @@ implements <a href="Wait.html" title="interface in org.openqa.selenium.support.u
 </ul>
 </dd>
 </dl>
+</section>
+</li>
+<li>
+<section class="detail" id="input">
+<h3>input</h3>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="FluentWait.html" title="type parameter in FluentWait">T</a></span>&nbsp;<span class="element-name">input</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="clock">
+<h3>clock</h3>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Clock.html" title="class or interface in java.time" class="external-link">Clock</a></span>&nbsp;<span class="element-name">clock</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="sleeper">
+<h3>sleeper</h3>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="Sleeper.html" title="interface in org.openqa.selenium.support.ui">Sleeper</a></span>&nbsp;<span class="element-name">sleeper</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="timeout">
+<h3>timeout</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">timeout</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="interval">
+<h3>interval</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html" title="class or interface in java.time" class="external-link">Duration</a></span>&nbsp;<span class="element-name">interval</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="messageSupplier">
+<h3>messageSupplier</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html" title="class or interface in java.util.function" class="external-link">Supplier</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">messageSupplier</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="ignoredExceptions">
+<h3>ignoredExceptions</h3>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&gt;&gt;</span>&nbsp;<span class="element-name">ignoredExceptions</span></div>
 </section>
 </li>
 </ul>

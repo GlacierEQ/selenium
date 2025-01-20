@@ -83,7 +83,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;<a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a>&gt;</code>, <code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public enum </span><span class="element-name type-name-label">Platform</span>
+<div class="type-signature"><span class="annotations">@NullMarked
+</span><span class="modifiers">public enum </span><span class="element-name type-name-label">Platform</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html" title="class or interface in java.lang" class="external-link">Enum</a>&lt;<a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a>&gt;</span></div>
 <div class="block">Represents the known and supported Platforms that WebDriver runs on. This is pretty close to the
  Operating System, but differs slightly, because this class is used to extract information such as
@@ -136,44 +137,46 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code><a href="#MOUNTAIN_LION" class="member-name-link">MOUNTAIN_LION</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#SIERRA" class="member-name-link">SIERRA</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#SEQUOIA" class="member-name-link">SEQUOIA</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#SNOW_LEOPARD" class="member-name-link">SNOW_LEOPARD</a></code></div>
+<div class="col-first even-row-color"><code><a href="#SIERRA" class="member-name-link">SIERRA</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#SONOMA" class="member-name-link">SONOMA</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#SNOW_LEOPARD" class="member-name-link">SNOW_LEOPARD</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#UNIX" class="member-name-link">UNIX</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code><a href="#SONOMA" class="member-name-link">SONOMA</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#UNIX" class="member-name-link">UNIX</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Many platforms have UNIX traits, amongst them LINUX, Solaris and BSD.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#VENTURA" class="member-name-link">VENTURA</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#VISTA" class="member-name-link">VISTA</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code><a href="#VENTURA" class="member-name-link">VENTURA</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#VISTA" class="member-name-link">VISTA</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">For versions of Windows that "feel like" Windows Vista.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#WIN10" class="member-name-link">WIN10</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#WIN11" class="member-name-link">WIN11</a></code></div>
+<div class="col-first even-row-color"><code><a href="#WIN10" class="member-name-link">WIN10</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code><a href="#WIN7" class="member-name-link">WIN7</a></code></div>
+<div class="col-first odd-row-color"><code><a href="#WIN11" class="member-name-link">WIN11</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#WIN8" class="member-name-link">WIN8</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code><a href="#WIN7" class="member-name-link">WIN7</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#WIN8" class="member-name-link">WIN8</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">For versions of Windows that "feel like" Windows 8.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#WIN8_1" class="member-name-link">WIN8_1</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code><a href="#WINDOWS" class="member-name-link">WINDOWS</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code><a href="#WIN8_1" class="member-name-link">WIN8_1</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#WINDOWS" class="member-name-link">WINDOWS</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Never returned, but can be used to request a browser running on any version of Windows.</div>
 </div>
-<div class="col-first odd-row-color"><code><a href="#XP" class="member-name-link">XP</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first even-row-color"><code><a href="#XP" class="member-name-link">XP</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">For versions of Windows that "feel like" Windows XP.</div>
 </div>
-<div class="col-first even-row-color"><code><a href="#YOSEMITE" class="member-name-link">YOSEMITE</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code><a href="#YOSEMITE" class="member-name-link">YOSEMITE</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -201,7 +204,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Extracts platforms based on system properties in Java and uses a heuristic to determine the
  most likely operating system.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract <a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract @Nullable <a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#family()" class="member-name-link">family</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a platform that represents a family for the current platform.</div>
@@ -403,6 +406,12 @@ the order they are declared.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="SEQUOIA">
+<h3>SEQUOIA</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></span>&nbsp;<span class="element-name">SEQUOIA</span></div>
+</section>
+</li>
+<li>
 <section class="detail" id="UNIX">
 <h3>UNIX</h3>
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></span>&nbsp;<span class="element-name">UNIX</span></div>
@@ -553,7 +562,7 @@ not permitted.)</div>
 <li>
 <section class="detail" id="family()">
 <h3>family</h3>
-<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type"><a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></span>&nbsp;<span class="element-name">family</span>()</div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">@Nullable <a href="Platform.html" title="enum class in org.openqa.selenium">Platform</a></span>&nbsp;<span class="element-name">family</span>()</div>
 <div class="block">Returns a platform that represents a family for the current platform. For instance the LINUX if
  a part of the UNIX family, the XP is a part of the WINDOWS family.</div>
 <dl class="notes">

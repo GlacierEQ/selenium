@@ -91,7 +91,8 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="bidi/BiDiException.html" title="class in org.openqa.selenium.bidi">BiDiException</a></code>, <code><a href="safari/ConnectionClosedException.html" title="class in org.openqa.selenium.safari">ConnectionClosedException</a></code>, <code><a href="remote/http/ConnectionFailedException.html" title="class in org.openqa.selenium.remote.http">ConnectionFailedException</a></code>, <code><a href="DetachedShadowRootException.html" title="class in org.openqa.selenium">DetachedShadowRootException</a></code>, <code><a href="devtools/DevToolsException.html" title="class in org.openqa.selenium.devtools">DevToolsException</a></code>, <code><a href="remote/ErrorHandler.UnknownServerException.html" title="class in org.openqa.selenium.remote">ErrorHandler.UnknownServerException</a></code>, <code><a href="HealthCheckFailedException.html" title="class in org.openqa.selenium">HealthCheckFailedException</a></code>, <code><a href="InsecureCertificateException.html" title="class in org.openqa.selenium">InsecureCertificateException</a></code>, <code><a href="InvalidArgumentException.html" title="class in org.openqa.selenium">InvalidArgumentException</a></code>, <code><a href="InvalidCookieDomainException.html" title="class in org.openqa.selenium">InvalidCookieDomainException</a></code>, <code><a href="InvalidElementStateException.html" title="class in org.openqa.selenium">InvalidElementStateException</a></code>, <code><a href="InvalidSelectorException.html" title="class in org.openqa.selenium">InvalidSelectorException</a></code>, <code><a href="JavascriptException.html" title="class in org.openqa.selenium">JavascriptException</a></code>, <code><a href="json/JsonException.html" title="class in org.openqa.selenium.json">JsonException</a></code>, <code><a href="interactions/MoveTargetOutOfBoundsException.html" title="class in org.openqa.selenium.interactions">MoveTargetOutOfBoundsException</a></code>, <code><a href="remote/NoSuchDriverException.html" title="class in org.openqa.selenium.remote">NoSuchDriverException</a></code>, <code><a href="NoSuchSessionException.html" title="class in org.openqa.selenium">NoSuchSessionException</a></code>, <code><a href="NotFoundException.html" title="class in org.openqa.selenium">NotFoundException</a></code>, <code><a href="devtools/RequestFailedException.html" title="class in org.openqa.selenium.devtools">RequestFailedException</a></code>, <code><a href="remote/ScreenshotException.html" title="class in org.openqa.selenium.remote">ScreenshotException</a></code>, <code><a href="ScriptTimeoutException.html" title="class in org.openqa.selenium">ScriptTimeoutException</a></code>, <code><a href="SessionNotCreatedException.html" title="class in org.openqa.selenium">SessionNotCreatedException</a></code>, <code><a href="StaleElementReferenceException.html" title="class in org.openqa.selenium">StaleElementReferenceException</a></code>, <code><a href="TimeoutException.html" title="class in org.openqa.selenium">TimeoutException</a></code>, <code><a href="firefox/UnableToCreateProfileException.html" title="class in org.openqa.selenium.firefox">UnableToCreateProfileException</a></code>, <code><a href="UnableToSetCookieException.html" title="class in org.openqa.selenium">UnableToSetCookieException</a></code>, <code><a href="support/ui/UnexpectedTagNameException.html" title="class in org.openqa.selenium.support.ui">UnexpectedTagNameException</a></code>, <code><a href="UnhandledAlertException.html" title="class in org.openqa.selenium">UnhandledAlertException</a></code>, <code><a href="remote/UnreachableBrowserException.html" title="class in org.openqa.selenium.remote">UnreachableBrowserException</a></code>, <code><a href="UnsupportedCommandException.html" title="class in org.openqa.selenium">UnsupportedCommandException</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">WebDriverException</span>
+<div class="type-signature"><span class="annotations">@NullMarked
+</span><span class="modifiers">public class </span><span class="element-name type-name-label">WebDriverException</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html" title="class or interface in java.lang" class="external-link">RuntimeException</a></span></div>
 <dl class="notes">
 <dt>See Also:</dt>
@@ -135,12 +136,12 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E()" class="member-name-link">WebDriverException</a>()</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">WebDriverException</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String)" class="member-name-link">WebDriverException</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)" class="member-name-link">WebDriverException</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)" class="member-name-link">WebDriverException</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Throwable)" class="member-name-link">WebDriverException</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</code></div>
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.Throwable)" class="member-name-link">WebDriverException</a><wbr>(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
@@ -172,19 +173,19 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getHostInformation()" class="member-name-link">getHostInformation</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getMessage()" class="member-name-link">getMessage</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the detail message string of this exception that includes not only the original message
  passed to the exception constructor but also driver information, system information and extra
  information added by <a href="#addInfo(java.lang.String,java.lang.String)"><code>addInfo(String, String)</code></a> method.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getRawMessage()" class="member-name-link">getRawMessage</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the simple message string of this exception.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getSupportUrl()" class="member-name-link">getSupportUrl</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
@@ -269,20 +270,20 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="&lt;init&gt;(java.lang.String)">
 <h3>WebDriverException</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(java.lang.Throwable)">
 <h3>WebDriverException</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</span></div>
 </section>
 </li>
 <li>
 <section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.Throwable)">
 <h3>WebDriverException</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">WebDriverException</span><wbr><span class="parameters">(@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ @Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Throwable.html" title="class or interface in java.lang" class="external-link">Throwable</a>&nbsp;cause)</span></div>
 </section>
 </li>
 </ul>
@@ -296,7 +297,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getMessage()">
 <h3>getMessage</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getMessage</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getMessage</span>()</div>
 <div class="block">Returns the detail message string of this exception that includes not only the original message
  passed to the exception constructor but also driver information, system information and extra
  information added by <a href="#addInfo(java.lang.String,java.lang.String)"><code>addInfo(String, String)</code></a> method. To get the original message use
@@ -312,7 +313,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getRawMessage()">
 <h3>getRawMessage</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRawMessage</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getRawMessage</span>()</div>
 <div class="block">Returns the simple message string of this exception.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -341,7 +342,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="getSupportUrl()">
 <h3>getSupportUrl</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getSupportUrl</span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">getSupportUrl</span>()</div>
 </section>
 </li>
 <li>
