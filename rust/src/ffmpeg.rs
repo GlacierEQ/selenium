@@ -45,9 +45,9 @@ const FFMPEG_RECORD_FRAME_RATE: &str = "30";
 const FFMPEG_RECORD_DESKTOP_WINDOWS_COMMAND: &str = "{} -f gdigrab -i desktop -r {} -q:v 1 -y {}";
 const FFMPEG_RECORD_DESKTOP_LINUX_COMMAND: &str = "{} -f x11grab -i {} -r {} -vcodec huffyuv -y {}";
 const FFMPEG_RECORD_DESKTOP_MACOS_COMMAND: &str =
-    r#"{} -f avfoundation -video_device_index 0 -r {} -y {}"#;
+    r#"{} -f avfoundation -i 0 -r {} -pix_fmt yuv420p -y {}"#;
 const FFMPEG_RECORDING_EXTENSION_AVI: &str = "avi";
-const FFMPEG_RECORDING_EXTENSION_MKV: &str = "mkv";
+const FFMPEG_RECORDING_EXTENSION_MOV: &str = "mov";
 const FFMPEG_RECORDING_FOLDER: &str = "recordings";
 const FFMPEG_DEFAULT_DISPLAY: &str = ":0";
 
@@ -194,7 +194,7 @@ pub fn uncompress_ffmpeg(
 fn get_recording_name(os: &str) -> String {
     let now = chrono::Local::now();
     let extension = if MACOS.is(os) {
-        FFMPEG_RECORDING_EXTENSION_MKV
+        FFMPEG_RECORDING_EXTENSION_MOV
     } else {
         FFMPEG_RECORDING_EXTENSION_AVI
     };
@@ -218,7 +218,14 @@ pub fn record_desktop_with_ffmpeg(
         FFMPEG_NAME, &recording_name
     ));
     let command = if LINUX.is(os) {
-        let env_display = env::var(ENV_DISPLAY).unwrap_or(FFMPEG_DEFAULT_DISPLAY.to_string());
+        let mut env_display = env::var(ENV_DISPLAY).unwrap_or_default();
+        if env_display.is_empty() {
+            log.warn(format!(
+                "The env {} is empty. Using default value {}",
+                ENV_DISPLAY, FFMPEG_DEFAULT_DISPLAY
+            ));
+            env_display = FFMPEG_DEFAULT_DISPLAY.to_string();
+        }
         Command::new_single(format_four_args(
             get_recording_command(os),
             &path_to_string(&ffmpeg_path),
