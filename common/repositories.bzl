@@ -11,8 +11,8 @@ def pin_browsers():
 
     http_archive(
         name = "linux_firefox",
-        url = "https://ftp.mozilla.org/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz",
-        sha256 = "5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a",
+        url = "https://ftp.mozilla.org/pub/firefox/releases/136.0.1/linux-x86_64/en-US/firefox-136.0.1.tar.xz",
+        sha256 = "326c3dadd05153a6825145c9200f48021e039593cd6d6c434abee326e6096835",
         build_file_content = """
 load("@aspect_rules_js//js:defs.bzl", "js_library")
 package(default_visibility = ["//visibility:public"])
@@ -33,8 +33,8 @@ js_library(
 
     dmg_archive(
         name = "mac_firefox",
-        url = "https://ftp.mozilla.org/pub/firefox/releases/136.0/mac/en-US/Firefox%20136.0.dmg",
-        sha256 = "078559a33491b7c5ef5dcde62fe3c812835aae98b63a7e32b3bf7e33cb33fcc8",
+        url = "https://ftp.mozilla.org/pub/firefox/releases/136.0.1/mac/en-US/Firefox%20136.0.1.dmg",
+        sha256 = "416f5edf1e9fb938ccaea798adfe177ef7a4072c95a527cb460f3417d1ef5266",
         build_file_content = """
 load("@aspect_rules_js//js:defs.bzl", "js_library")
 package(default_visibility = ["//visibility:public"])
@@ -50,8 +50,8 @@ js_library(
 
     http_archive(
         name = "linux_beta_firefox",
-        url = "https://ftp.mozilla.org/pub/firefox/releases/137.0b1/linux-x86_64/en-US/firefox-137.0b1.tar.xz",
-        sha256 = "98848e14e857a3562c4a2cf6fbbf7966e4f256cf6e127df0b367ac23c6638676",
+        url = "https://ftp.mozilla.org/pub/firefox/releases/137.0b4/linux-x86_64/en-US/firefox-137.0b4.tar.xz",
+        sha256 = "580c536c82ba1be0ff68e6c7a3d41ed1c1ffe791bf1d7c95b0a16f792d7abb07",
         build_file_content = """
 load("@aspect_rules_js//js:defs.bzl", "js_library")
 package(default_visibility = ["//visibility:public"])
@@ -72,8 +72,8 @@ js_library(
 
     dmg_archive(
         name = "mac_beta_firefox",
-        url = "https://ftp.mozilla.org/pub/firefox/releases/137.0b1/mac/en-US/Firefox%20137.0b1.dmg",
-        sha256 = "b6ff3f376bc25e8890ed34278fe5c0719349839a45c5ac340118ff983f3741a5",
+        url = "https://ftp.mozilla.org/pub/firefox/releases/137.0b4/mac/en-US/Firefox%20137.0b4.dmg",
+        sha256 = "24cf9eaaa5c6ace9c5cc0ecdbfeaa33f7d7474c19e0c98f985a9b5dab913b1b4",
         build_file_content = """
 load("@aspect_rules_js//js:defs.bzl", "js_library")
 package(default_visibility = ["//visibility:public"])
