@@ -21,14 +21,8 @@ require_relative 'spec_helper'
 
 module Selenium
   module WebDriver
-    describe ActionBuilder, exclusive: { bidi: false, reason: 'Not yet implemented with BiDi' } do
-      after do
-        if GlobalTestEnv.rbe? && GlobalTestEnv.browser == :chrome
-          reset_driver!
-        else
-          driver.action.clear_all_actions
-        end
-      end
+    describe ActionBuilder, exclusive: {bidi: false, reason: 'Not yet implemented with BiDi'} do
+      after { driver.action.clear_all_actions }
 
       describe '#send_keys' do
         it 'sends keys to the active element', except: {browser: %i[safari safari_preview]} do
@@ -161,6 +155,9 @@ module Selenium
       end
 
       describe '#double_click' do
+        # https://issues.chromium.org/issues/400087471
+        before { reset_driver! if GlobalTestEnv.rbe? && GlobalTestEnv.browser == :chrome }
+
         it 'presses pointer twice', except: {browser: %i[safari safari_preview]} do
           driver.navigate.to url_for('javascriptPage.html')
           element = driver.find_element(id: 'doubleClickField')
