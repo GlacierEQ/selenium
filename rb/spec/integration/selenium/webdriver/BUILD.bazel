@@ -49,7 +49,6 @@ rb_library(
 rb_integration_test(
     name = "bidi",
     srcs = ["bidi_spec.rb"],
-    tags = ["exclusive-if-local"],
     deps = [
         "//rb/lib/selenium/devtools",
         "//rb/lib/selenium/webdriver:bidi",
@@ -59,7 +58,6 @@ rb_integration_test(
 rb_integration_test(
     name = "devtools",
     srcs = ["devtools_spec.rb"],
-    tags = ["exclusive-if-local"],
     deps = [
         "//rb/lib/selenium/devtools",
         "//rb/lib/selenium/webdriver:bidi",
